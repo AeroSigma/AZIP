@@ -17,7 +17,7 @@ I am using the SD card interface on the Adafruit Feather M0 Datalogger
 Getting Started Steps:
 1. Copy a Z-Machine game file to the SD card and name it "GAME.DAT".
 2. Compile and upload the sketch to the Arduino.
-3. Open the Arduino Serial Monitor, set the baud rate to 9600 and the line ending to Newline.
+3. Open the Arduino Serial Monitor, set the baud rate to 115200 (or your choice in azip.ino line 33) and the line ending to Newline.
 4. The sketch will pause waiting for the return key.
 5. After hitting the return key, within a few seconds you should see the welcome screen in the serial monitor.
 6. You can begin typing commands in the top portion of the serial monitor, next to the Send button.
