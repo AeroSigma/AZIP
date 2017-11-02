@@ -4,7 +4,12 @@ This version of the Z-code interpreter is derived from Jzip created by John Hold
 More information about Jzip, including the source code can by found here:
 http://jzip.sourceforge.net/
 
-Updated by @AeroSigma to 2017 compatibility.
+Updated by @AeroSigma to 2017 compatibility:
+  -SdFatUtil sourced and added since no longer part of greiman's SdFat library (see S/W dependencies below.)
+  -Card initialization updated to modern format: SdFat.begin(chipSelect,SPI_SPEED), instead of SdFat.init(SPI_SPEED,chipSelect)
+  -SRANDOM_FUNC and RANDOM_FUNC defined to modern srand and rand.
+  -Added if def to use USB serial on Cortex M0 chips (e.g. Adafruit Feather M0)
+  
 
 Software Dependencies:
 SDFAT library: https://github.com/greiman/SdFat
